@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(51, 70, 99, 0.875);
+}
+.content{
+    margin-inline: auto;
+    margin-block: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    background-color: beige;
+}
+h2{
+    font-size: 3rem;
+}
+.sub-div{
+    margin-block: 20px;
+}
+
+.content-div{
+    display: flex;
+    align-items: flex-end;
+}
+p{
+    width: 450px;
+    min-width: 300px;
+    font-size: 1.5rem;
+}
+.sub-head{
+    color: blue;
+    font-weight: bold;
+}
+span{
+    font-size: 1.5rem;
+}
