@@ -1,4 +1,4 @@
-let myArray1 = ["Rose", "Jasmine", "Sunflower", "Daisy", "Orchid"];
+let myArray1 = [" Rose", " Jasmine", " Sunflower", " Daisy", " Orchid"];
 document.getElementById("myArray").innerHTML= myArray1;
 
 myArray1.sort();
@@ -10,7 +10,7 @@ document.getElementById("reverse").innerHTML= myArray1;
 myArray1.pop();
 document.getElementById("pop").innerHTML= myArray1;
 
-myArray1.push("Lotus", "Hibiscus");
+myArray1.push(" Lotus", " Hibiscus");
 document.getElementById("push").innerHTML= myArray1;
 
 myArray1.shift();
@@ -37,7 +37,7 @@ document.getElementById("concated").innerHTML= concated;
 
 
 //--------------- map() 
-let num= [2,8,12,9,15,3,20];
+let num= [2,8,12,9,15,4,20];
 document.getElementById("num").innerHTML= num;
 
 function square(n){
@@ -46,6 +46,19 @@ function square(n){
 }
 let squr = num.map(square);
 document.getElementById("map").innerHTML= squr;
+
+
+//---------------------reduce
+const total = num.reduce(sum);
+function sum (accumulator, value){
+    return accumulator+value;
+}
+console.log(total);
+document.getElementById("sum").innerHTML= total;
+
+
+
+
 
 //-----------------------------------String methods
 let text = "Today is awesome";
@@ -65,3 +78,10 @@ document.getElementById("sliceof").innerHTML= sliceOf;
 
 let replaced = text.replace("awesome", "spectacular");
 document.getElementById("replaced").innerHTML= replaced;
+
+let letter = text.charAt(4);
+document.getElementById("charat").innerHTML= letter;
+
+let code = text.charCodeAt(6);
+document.getElementById("code").innerHTML= code;
+

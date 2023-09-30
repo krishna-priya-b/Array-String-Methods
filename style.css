@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* outline: 2px solid rgb(255, 0, 0) !important; */
 }
 body{
     background-color: rgba(51, 70, 99, 0.875);
